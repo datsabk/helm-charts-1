@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 3.8.0
+
+* Add `providers.gke.cos` option to prevent `/usr/src` from being mounted on COS
+
 ## 3.7.1
 
 * Add required capability to system-probe in order to make the `auth_token` file readable.
