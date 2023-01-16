@@ -133,7 +133,7 @@ spec:
             value: {{ .Values.datadog.secretBackend.timeout | quote }}
           {{- end }}
           - name: KUBERNETES
-            value: "yes"
+            value: {{ .Values.datadog.kubernetes }}
           {{- if .Values.datadog.site }}
           - name: DD_SITE
             value: {{ .Values.datadog.site | quote }}

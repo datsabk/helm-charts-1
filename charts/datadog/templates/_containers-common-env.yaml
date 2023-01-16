@@ -69,7 +69,7 @@
   value: '{{ toJson .Values.datadog.namespaceLabelsAsTags }}'
 {{- end }}
 - name: KUBERNETES
-  value: "yes"
+  value: {{ .Values.datadog.kubernetes }}
 {{- if .Values.datadog.site }}
 - name: DD_SITE
   value: {{ .Values.datadog.site | quote }}
